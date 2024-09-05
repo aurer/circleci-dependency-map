@@ -1,0 +1,62 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+textarea {
+  background: inherit;
+  border: none;
+  position: absolute;
+  inset: 0;
+  outline: none;
+
+  &::placeholder {
+    color: rgb(255, 255, 255);
+    font-family: Inter, "Hevetica Neue", Helvetica, apple-system, sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: 0.5;
+  }
+}
+
+.yamlError {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.3rem 1rem;
+  font-size: 0.9rem;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  background: rgba(180, 0, 0, 0.8);
+}
+
+.output {
+  display: flex;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+ul {
+  margin: 0 0 1rem;
+}
+
+.target {
+  color: red;
+}
+
+.invalid {
+  outline: 1px solid red;
+  color: red;
+}
